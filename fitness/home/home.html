@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUEFITNESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/WhatsApp Image 2024-02-29 at 23.49.40_4f6e0199.jpg" alt="">
+            </div>
+            <div class="details">
+                <ul>
+                    <li><a href="/fitness/home/home.html">HOME</a></li>
+                    <li><a href="#">TRAINERS</a></li>
+                    <li><a href="#">CONATCT US</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="profile">
+                <img id="profile-img" src="/profile.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <main>
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="/transformation/img1.jpg" >
+
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/transformation/img2.jpg" >
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/transformation/img3.jpg" >
+    
+    </div>
+    <div class="mySlides fade">
+      <img src="/transformation/img4.jpg" >
+    
+    </div>
+    <div class="mySlides fade">
+      <img src="/transformation/img5.jpg" >
+    
+    </div>
+    <div class="mySlides fade">
+      <img src="/transformation/img6.jpg" >
+    
+    </div>
+    <div class="mySlides fade">
+      <img src="/transformation/img7.jpg" >
+    
+    </div>
+  
+            </div>
+        </main>
+    </section>
+
+
+
+    <section>
+        <div class="bot" onclick="toggleChatbot()">
+          <img src="/chatbot-img.png" alt="Chatbot Image">
+        </div>
+      </section>
+      
+      <section id="chatbot" style="display:none;">
+        <div class="bot-container">
+          <div class="bot-header">
+            <h2>Fitness Chatbot</h2>
+            <button  onclick="closeChatbot()">Close</button>
+          </div>
+          <div class="bot-content">
+            <input type="text" id="questionInput" placeholder="Ask me a fitness question...">
+            <button id="Submit" onclick="getAnswer()">Submit</button>
+            <p id="answer"></p>
+          </div>
+        </div>
+      </section>
+      
+    <script src="script.js"></script>
+    
+</body>
+</html>

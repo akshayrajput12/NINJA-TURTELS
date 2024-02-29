@@ -27,7 +27,7 @@ function login() {
   // Simple validation (you may want to implement more robust validation)
   if (username == 'akshayrajput2616@gmail.com' && password =='Cbum@1234') {
     alert('Login successful!');
-    window.location.href = '/pages/home.html';
+    window.location.href = '/fitness/home/home.html';
     // Redirect to another page or perform additional actions on successful login
   } else {
     alert('Invalid username or password. Please try again.');
