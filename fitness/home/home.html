@@ -16,7 +16,7 @@
             <div class="details">
                 <ul>
                     <li><a href="/fitness/home/home.html">HOME</a></li>
-                    <li><a href="#">TRAINERS</a></li>
+                    <li><a href="/fitness/trainers/trainer.html">TRAINERS</a></li>
                     <li><a href="#">CONATCT US</a></li>
                     <li><a href="#">ABOUT US</a></li>
                 </ul>
@@ -61,6 +61,10 @@
                    
                     <button>NEXT</button>
                 </div>
+                <div id="nextContainer" class="next-container">
+                    <!-- Content for the white box goes here -->
+                </div>
+                
 
             </div>
             <div class="right">
@@ -123,6 +127,7 @@
             style="height: 400px; min-height: 400px"
             frameborder="0"
             ></iframe>
+            <div class="w"></div>
             
 
           </div>
@@ -262,7 +267,7 @@
 
         <div class="trainers">
             
-        <img src="/arrow (1).png" alt="">
+        <a href="/fitness/trainers/trainer.html"><img src="/arrow (1).png" alt=""><br>  View all</a>
         </div>
 
 
@@ -281,21 +286,7 @@
         defer>
         </script>
 
-        <script>
-            // Wait for the iframe to finish loading
-        window.addEventListener('load', (event) => {
-            if (event.target.src === 'https://www.chatbase.co/chatbot-iframe/zoOaUWr8K79f8TYt2b-yF') {
-                // Access the iframe's contentWindow
-                const iframeContentWindow = document.getElementById('chatbotIframe').contentWindow;
-
-                // Change the chatbot name in the iframe
-                iframeContentWindow.document.querySelector('#chatbot-name').textContent = 'New Chatbot Name';
-            }
-        });
-        </script>
-
         
     <script src="script.js"></script>
-    
 </body>
 </html>

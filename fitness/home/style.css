@@ -536,3 +536,27 @@ main{
     background-color: rgb(26, 25, 25);
     background: rgba(0, 0, 0, 0.3);
   }
+
+  .w{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top:-45px;
+    left: 100px;
+  }
+
+.trainers a{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.trainers a:hover{
+    scale: 1.1;
+    transition: .6s;
+    text-decoration: underline;
+}
