@@ -202,6 +202,13 @@ main{
     text-transform: uppercase;
     font-weight: 500;
 }
+.bot-header img{
+    width: 50px;
+    position: relative;
+    top: -120px;
+    left: 300px;
+    cursor: pointer;
+}
 
 .bot-content{
     width: 90%;

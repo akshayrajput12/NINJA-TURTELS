@@ -34,3 +34,41 @@ function login() {
     resetLoginForm();
   }
 }
+
+
+var express = require('express');
+var mysql = require('mysql');
+var bodyParser = require('body-parser');
+
+var app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root', // your MySQL username
+  password: '', // your MySQL password
+  database: 'myDatabase'
+});
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+app.post('/login', function(req, res) {
+  var username = req.body.username;
+  var password = req.body.password;
+  
+  connection.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+    if (results.length > 0) {
+      res.redirect('/home');
+    } else {
+      res.redirect('/');
+    }
+  });
+});
+
+app.listen(3000, function() {
+  console.log('Server running on http://localhost:3000/');
+});
