@@ -58,3 +58,39 @@ function toggleChatbot() {
     const userQuestion = document.getElementById("questionInput").value;
     document.getElementById("answer").innerText = fitnessChatbot.ask(userQuestion);
   }
+
+// Get all the get started buttons
+const getStartedBtns = document.querySelectorAll('.start button');
+
+// Add event listener to each get started button
+getStartedBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        // Find the corresponding user info div and toggle its display
+        const userInfoDiv = btn.closest('.start').nextElementSibling;
+        userInfoDiv.style.display = userInfoDiv.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+// Get all the close buttons
+const closeBtns = document.querySelectorAll('#userInfo .img');
+
+// Add event listener to each close button
+closeBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        // Find the corresponding user info div and hide it
+        const userInfoDiv = btn.closest('.user-info');
+        userInfoDiv.style.display = 'none';
+    });
+});
+
+// Get all the checkbox buttons
+const checkboxButtons = document.querySelectorAll('.checkbox-button');
+
+// Add event listener to each checkbox button
+checkboxButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Toggle the checked class on the corresponding label
+        const label = document.querySelector(`label[for="${button.id}"]`);
+        label.classList.toggle('checkbox-button-checked');
+    });
+});

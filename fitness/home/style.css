@@ -5,6 +5,7 @@
 
 body{
     background-color:rgba(0, 0, 0, 0.771);
+    width: 99vw;
    
 }
 
@@ -106,6 +107,39 @@ main{
     width: 45%;
 }
 
+.start{
+    width: 100%;
+}
+.start p{
+    position: relative;
+    top: 150px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+}
+
+.start span{
+    color: red;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.start button{
+    position: relative;
+    top: 200px;
+    left: 200px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6em;
+    background-color: rgba(73, 35, 105, 0.649);
+    width: 200px;
+    height: 80px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
 .right{
     width: 45%;
     height: 40vh;
@@ -136,10 +170,10 @@ main{
 .bot img{
     width: 150px;
     position: relative;
-    top:200px;
+    top:80px;
     cursor: pointer;
     z-index: 2;
-    left: 450px;
+    left: 650px;
 }
 
 .bot-container{
@@ -148,8 +182,7 @@ main{
     left: 700px;
     top: -300px;
     width: 350px;
-    height: 500px;
-    background-color: rgb(26, 25, 25);
+    height: 500px;;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border: 3px solid rgba(255, 255, 255, 0.5);
@@ -157,7 +190,6 @@ main{
 }
 
 .bot-header{
-    background-color: rgb(26, 25, 25);
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     font-size: 1.2em;
@@ -187,7 +219,7 @@ main{
 
 #Submit{
     position: relative;
-    top: 320px;
+    top: 220px;
     left: 100px;
     width: 100px;
     height: 50px;
@@ -197,3 +229,235 @@ main{
     color: black;
     font-weight: 600;
 }
+
+/* services*/
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ h2{
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+
+}
+
+.s{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background-color: rgb(26, 25, 25);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+
+    
+}
+
+.s img{
+    width: 150px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    right: 15px;
+    border-radius: 50%;
+}
+
+.s:hover{
+    scale: 1.2;
+    z-index: 2;
+    transition: .6s;
+    cursor: pointer;
+
+}
+
+/*trainers */
+
+
+.trainers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trainer{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(26, 25, 25);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.trainer:hover{
+    scale: 1.2;
+    z-index: 2;
+    transition: .6s;
+    cursor: pointer;
+}
+.trainers img{
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    align-items: center;
+    text-align:  center;
+    
+}
+
+.trainers img:hover{
+    scale: 1.1;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.trainers .tds span{
+    color: red;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.trainers .tds h3{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600
+}
+
+.trainers .tds button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: red;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.trainers .tds button:hover{
+    scale: 1.2;
+    z-index: 2;
+    transition: .6s;
+    cursor: pointer;
+}
+
+
+/* user info*/
+.user-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 75vh;
+    width: 80vw;
+}
+
+.user-info .img{
+    width: 40px;
+    position: relative;
+    left: 260px;
+    cursor: pointer;
+}
+
+.model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model img{
+    width: 200px;
+    cursor: pointer;
+
+}
+.model img:hover{
+    cursor: pointer;
+    z-index: 2;
+    scale: 1.05;
+}
+
+.checkbox-button {
+    display: none;
+}
+
+.checkbox-button-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkbox-button-checked {
+    background-color: skyblue;
+}
+.option label{
+    width: 100px;
+    height: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.user-info button{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(22, 86, 111);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -60px;
+    left: 160px;
+    cursor: pointer;
+
+}
+
+.user-info button:hover{
+    scale: 1.1;
+    transition: .6s;
+}
+
+
+/* diet plan*/
