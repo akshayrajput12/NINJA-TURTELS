@@ -10,7 +10,7 @@ function showForm(button) {
     form.classList.add('application-form', 'your-custom-class');
     form.style.backgroundColor = 'lightgray';
     form.innerHTML = `
-      <h3>Apply to train with ${trainer.querySelector('.tds h3:first-child span').innerText}</h3>
+      <h3>Apply to train</h3>
       <form id="applicationForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -58,5 +58,3 @@ function showForm(button) {
       }
     });
 }
-
-
